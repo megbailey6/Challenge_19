@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        
+    </head>
+    <body>
+        <!--header-->           
+        <header class="header">
+            <a href="" class="logo"><img src="Images/Logo3.png" alt="MB Logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="#hero">About</a></li>
+              <li><a href="#mySkills">Skills</a></li>
+              <li><a href="#myWork">Work</a></li>
+              <li><a href="#" id="openModalLink">Contact</a></li>
+            </ul>
+        <div id="emailModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="emailForm">
+                <label for="to">To:</label>
+                <input type="email" id="to" name="to" value="meg.bailey6@gmail.com" readonly>
+                <label for="from">Your Email:</label>
+                <input type="email" id="from" name="from" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            </div>
+        </div>
+          </header>
+        <!--content-->
+        <div id="hero">
+            <div class="hello">
+                <img src="Images/Personal1.png">
+            </div>
+            <div class="aboutme">
+                <p>Hello! I'm a Utah-based UX/UI designer with a passion for design and a love for the digital world. In my spare time you can often find me reading, writing, painting, or walking my dog.</p>
+                <p>My design philosophy is inspired by my experiences working in early childhood education and is rooted in empathy for users of all ages. I believe in creating accessible designs that are simple, memorable, and intuitive.</p>
+                <p>I thrive when I'm learning new skills and coming up with solutions to challenging problems. I enjoy creating solutions that blend creativity and functionality to create positive digital experiences for users.</p>
+                <p>Drawing from my experiences in education, I bring a diverse skill set to UX design, including communication, collaboration, and adaptability. This versatility enables me to approach design challenges from multiple angles, resulting in inclusive and innovative solutions.</p>
+                <p>Let's connect and create something amazing!</p>
+                <button id="resumeButton">Resume</button>
+            </div>
+        </div>
+        <div id="mySkills">
+            <div class="skillsTitle"><img src="Images/Group 10.png"></div>
+            <div id="overlay"><img src="Images/Overlay.png"></div>
+            <div class="skillsBox">
+                <div class="skillsCard"><h2>User Research</h2><p>I like to conduct user interviews in person whenever possible so that I can see the person's facial expressions. I record interviews (with permission) and both take notes and often use transcription software to refer back to later. I try to ask thoughtful questions to get good data.</p></div>
+                <div class="skillsCard"><h2>User Empathy</h2><p>I use Google Drive to organize interview notes and Figjam to collaborate with a team to synthesize user data gathered during interviews, such as affinity diagrams and empathy maps.</p></div>
+                <div class="skillsCard"><h2>Qualitative Interviews</h2><p>During interviews, I try to implement the “Five Whys” method to help get answers that get deeper into the issues I'm trying to learn about. For example, a user says, “I don't like giving gift cards as gifts” (GiftJoy Project), I want to know why and how the app can help them find good alternatives.</p></div>
+            </div>
+        </div>
+        <div id="myWork">
+            <div class="workTitle"><img src="Images/Group 10 (1).png"></div>
+            <div class="workBox">
+                <div class="workCard"><h2>GiftJoy</h2>
+                    <center><img src="Images/PrototypeScreenshot.png"></center>
+                    <center><button>View Project</button></center>
+                </div>
+                <div class="workCard"><h2>Angels in Sports</h2>
+                    <center><img src="Images/AISPrototype.png"></center>
+                    <center><button>View Project</button></center>
+                </div>
+                <!-- <div class="workCard"><h2>Placeholder</h2>
+                    <img src="">
+                    <center><button>View Project</button></center>
+                </div> -->
+            </div>
+        </div>
+        <!--footer-->
+        <footer>
+            <div class="footer nav">
+                <ul>
+                    <li><a href="#hero">About</a></li>
+                    <li><a href="#mySkills">Skills</a></li>
+                    <li><a href="#myWork">Work</a></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <ul>
+                    <li><b>Let's Connect!</b></li>
+                    <li>meg.bailey6@gmail.com</li>
+                    <li><img src="Images/linkedin.png" alt="linkedin"></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+<script src="JS/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</html>
