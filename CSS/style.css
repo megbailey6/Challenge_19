@@ -476,6 +476,11 @@ div.aboutme button:hover {
   box-shadow: 1px 1px 1px grey;
 }
 
+.workCard a {
+  text-decoration: none;
+  color: white;
+}
+
 .workCard button:hover {
   background-color: #CCD2CB;
   color: #434C41;
